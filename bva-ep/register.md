@@ -28,6 +28,11 @@
 | **Password**  | ≥8 karakter, kombinasi huruf/angka/simbol | <8 karakter        |
 | **Confirm Password** | Sesuai dengan password yang diinput sebelumnya | Tidak sesuai dengan yang diinput |
 
+# contoh
+|TC ID | Deskripsi | Input | Excpect | Aktual | Status |
+|---|---|---|---|---|---|
+|TC01 | Input nama kurang dari 3 karakter | 'sa',sandirsndi','san@gmail.com',sandi123,sandi123| Error:nama minal 3| Berhasil| Failed|
+
 # TEST CASE REGISTER
 ---
 | TC ID | Field     | Test Case Description                | Input              | Expected Result                            | Aktual |  Status |
