@@ -32,6 +32,7 @@
 |TC ID | Deskripsi | Input | Excpect | Aktual | Status |
 |---|---|---|---|---|---|
 |TC01 | Input nama kurang dari 3 karakter | 'sa',sandirsndi','san@gmail.com',sandi123,sandi123| Error:nama minal 3| Berhasil| Failed|
+|TC02 | Input tepat minimal | `s`,`sandirsndi`,`san@gmail.com`,`sandi123`,`sandi123` | Berhasil | Berhasil | Passed|
 
 # TEST CASE REGISTER
 ---
