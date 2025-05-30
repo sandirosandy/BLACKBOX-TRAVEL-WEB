@@ -29,7 +29,7 @@
 |TC06 | Input password non kombinasi | `12345` | Error:password harus mengandung angka dan huruf | Valid |  ❌Failed |
 |TC07 | Input kombinasi password | `sas12345` | Valid | Valid | ✅Passed |
 |TC08 | Input Confirm password | Sama: `sas1234` | valid | valid | ✅Passed |
-|TC09 | Input Confirm password berbeda | berbeda : `12345` | Error:password harus sesuai | Valid | ❌Failed |
+|TC09 | Input Confirm password berbeda | berbeda : `12345` | Error:password harus sesuai | Valid | ✅Passed |
 
 
 
