@@ -25,7 +25,7 @@
 | **Name** | Huruf & spasi, ≥ 1 karakter                 | Kosong             |
 | **Username**  | 1 karakter               | 1 karakter                        |
 | **Email**     | Format email valid (`a@b.com`)            | Tanpa `@`, tanpa domain, kosong (`"abc"`, `"a@"`, `"@b.com"`, `""`)         |
-| **Password**  | ≥8 karakter, kombinasi huruf/angka/simbol | <8 karakter        |
+| **Password**  | ≥8 karakter | <8 karakter, kosong       |
 | **Confirm Password** | Sesuai dengan password yang diinput sebelumnya | Tidak sesuai dengan yang diinput |
 
 # contoh
