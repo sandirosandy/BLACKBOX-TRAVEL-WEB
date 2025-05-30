@@ -34,7 +34,8 @@
 |TC01 | Input nama > 3 karakter | `sa`,`sandirsndi`,`san@gmail.com`,`sandi123`,`sandi123`| Error:nama minimal 3| Berhasil| ❌Failed|
 |TC02 | Input nama tepat minimal (1) | `s`,`sandirsndi`,`san@gmail.com`,`sandi123`,`sandi123` | Berhasil | Berhasil | ✅Passed|
 |TC03 | Input Username > 5 Karakter | `s`,`sans`,`san@gmail.com`,`sandi123`,`sandi123` | Error: Username minimal 5 karakter | Berhasil | ❌Failed|
-|TC 04 | Input username tepat minimal (1) | `s`,`sans`,`san@gmail.com`,`sandi123`,`sandi123`| Berhasil | Berhasil | ✅Passed|
+|TC04 | Input username tepat minimal (1) | `s`,`sans`,`san@gmail.com`,`sandi123`,`sandi123`| Berhasil | Berhasil | ✅Passed |
+|TC05 | Input Email tanpa @ | sandigmail.com | Error:format email missing an @ | Pesan error berhasil ditampilkan | ✅Passed |
 
 
 # TEST CASE REGISTER
