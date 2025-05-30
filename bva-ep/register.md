@@ -28,8 +28,8 @@
 |TC05 | Input Email tanpa @ | sandigmail.com | Error:format email missing an @ | Pesan error berhasil ditampilkan | ✅Passed |
 |TC06 | Input password non kombinasi | `12345` | Error:password harus mengandung angka dan huruf | Valid |  ❌Failed |
 |TC07 | Input kombinasi password | `zas12345` | Valid | Valid | ✅Passed |
-|TC08 | Input Confirm password | Sama: "pass1234" | valid | valid | ✅Passed |
-
+|TC08 | Input Confirm password | Sama: `zas1234` | valid | valid | ✅Passed |
+|TC09 | Input Confirm password berbeda | berbeda : `12345` | Error:password harus sesuai | Invalid | ❌Failed |
 
 
 
