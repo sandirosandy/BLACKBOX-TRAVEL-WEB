@@ -11,7 +11,7 @@
 ---
 | Field         | Validasi Panjang/Range | Nilai Valid                               | Nilai Invalid                    |
 | ------------- | ---------------------- | ----------------------------------------------------- | ---------------------------------------------------- |
-| **Name** | Minimal 3 huruf        | sa (2)                                | "" (kosong)                               |Valid | failed|
+| **Name** | Minimal 1 karakter        | sa (2)                                | "" (kosong)                               |Valid | failed|
 | **Username**  | 1–15 karakter          | `8` → ✅ `"user1234"`<br>`15` → ✅ `"usernamelengkap"`     | "" (kosong)   |
 | **Email** | Format Email | kelompokjurnal@gmail.com | kelompok@.com |
 | **Password**  | Minimal 8 karakter     | `8` → ✅ `"pass1234"`                                    | `5` → ❌ "12345", (kosong)                 |
