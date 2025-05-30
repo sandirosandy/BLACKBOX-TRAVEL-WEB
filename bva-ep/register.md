@@ -22,7 +22,7 @@
 ---
 | Field         | Kelas Valid                               | Kelas Invalid                                                               |
 | ------------- | ----------------------------------------- | --------------------------------------------------------------------------- |
-| **Name** | Huruf & spasi, ≥ 1 huruf                 | Kosong             |
+| **Name** | Huruf & spasi, ≥ 1 karakter                 | Kosong             |
 | **Username**  | 1 karakter               | 1 karakter                        |
 | **Email**     | Format email valid (`a@b.com`)            | Tanpa `@`, tanpa domain, kosong (`"abc"`, `"a@"`, `"@b.com"`, `""`)         |
 | **Password**  | ≥8 karakter, kombinasi huruf/angka/simbol | <8 karakter        |
