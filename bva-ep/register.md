@@ -12,7 +12,7 @@
 | Field         | Validasi Panjang/Range | Nilai Valid                               | Nilai Invalid                    |
 | ------------- | ---------------------- | ----------------------------------------------------- | ---------------------------------------------------- |
 | **Name** | Minimal 3 huruf        | sa (2)                                | Invalid                                |Valid | failed|
-| **Username**  | 8–15 karakter          | `8` → ✅ `"user1234"`<br>`15` → ✅ `"usernamelengkap"`     | `4` → ❌ `"usr"`<br>`16` → ❌ `"usernamelengkapx"`     |
+| **Username**  | 5–15 karakter          | `8` → ✅ `"user1234"`<br>`15` → ✅ `"usernamelengkap"`     | `4` → ❌ `"usr"`<br>`16` → ❌ `"usernamelengkapx"`     |
 | **Email** | Format Email | kelompokjurnal@gmail.com | kelompok@.com |
 | **Password**  | Minimal 8 karakter     | `8` → ✅ `"pass1234"`                                    | `5` → ❌ `"12345"`                  |
 | **Confirm Password** | Sesuai dengan password yang diinput sebelumnya | sesuai dengan password yang diinput | Tidak sesuai dengan yang diinput |
@@ -31,8 +31,9 @@
 # contoh
 |TC ID | Deskripsi | Input | Excpect | Aktual | Status |
 |---|---|---|---|---|---|
-|TC01 | Input nama kurang dari 3 karakter | `sa`,`sandirsndi`,`san@gmail.com`,`sandi123`,`sandi123`| Error:nama minimal 3| Berhasil| Failed|
-|TC02 | Input nama tepat minimal (1) | `s`,`sandirsndi`,`san@gmail.com`,`sandi123`,`sandi123` | Berhasil | Berhasil | Passed|
+|TC01 | Input nama > 3 karakter | `sa`,`sandirsndi`,`san@gmail.com`,`sandi123`,`sandi123`| Error:nama minimal 3| Berhasil| ❌Failed|
+|TC02 | Input nama tepat minimal (1) | `s`,`sandirsndi`,`san@gmail.com`,`sandi123`,`sandi123` | Berhasil | Berhasil | ✅Passed|
+|TC03 | Input Username > 5 Karakter | `s`,`sans`,`san@gmail.com`,`sandi123`,`sandi123` | Error: Username minimal 5 karakter | Berhasil | ❌Failed|
 
 # TEST CASE REGISTER
 ---
