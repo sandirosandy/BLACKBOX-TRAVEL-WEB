@@ -22,8 +22,8 @@
 ---
 | Field         | Kelas Valid                               | Kelas Invalid                                                               |
 | ------------- | ----------------------------------------- | --------------------------------------------------------------------------- |
-| **Name** | Huruf & spasi, ≥ 3 huruf                  | Kosong, <3 huruf             |
-| **Username**  | 8–15 karakter, huruf/angka                | <8 atau >15 karakter                        |
+| **Name** | Huruf & spasi, ≥ 1 huruf                 | Kosong             |
+| **Username**  | 1 karakter               | 1 karakter                        |
 | **Email**     | Format email valid (`a@b.com`)            | Tanpa `@`, tanpa domain, kosong (`"abc"`, `"a@"`, `"@b.com"`, `""`)         |
 | **Password**  | ≥8 karakter, kombinasi huruf/angka/simbol | <8 karakter        |
 | **Confirm Password** | Sesuai dengan password yang diinput sebelumnya | Tidak sesuai dengan yang diinput |
