@@ -2,7 +2,7 @@
 | Field     | Parameter Validasi                     | Jenis Pengujian | Alasan Valid/Invalid                              |
 | --------- | -------------------------------------- | --------------- | ------------------------------------------------- |
 | Name | Minimal 3 huruf                        | BVA & EP        | Valid: panjang = 3, huruf semua; Invalid: <3      |
-| Username  | 3–15 karakter, huruf/angka             | BVA & EP        | Valid:3/15 karakter; Invalid: 4/16 karakter      |
+| Username  | 1–15 karakter, huruf/angka             | BVA & EP        | Valid:3/15 karakter; Invalid: 4/16 karakter      |
 | Email     | Format email                           | EP              | Valid: format lengkap; Invalid: tanpa '@', domain |
 | Password  | Minimal 8 karakter, kombinasi karakter | BVA & EP        | Valid: ≥6, kombinasi huruf/angka/simbol           |
 | Confirm Password | Sesuai dengan Password yang di input sebelumnya                    | BVA & EP        | Valid: Jika sesuai dengan Password yang di inputkan sebelumnya  |
@@ -12,7 +12,7 @@
 | Field         | Validasi Panjang/Range | Nilai Valid                               | Nilai Invalid                    |
 | ------------- | ---------------------- | ----------------------------------------------------- | ---------------------------------------------------- |
 | **Name** | Minimal 3 huruf        | sa (2)                                | Invalid                                |Valid | failed|
-| **Username**  | 5–15 karakter          | `8` → ✅ `"user1234"`<br>`15` → ✅ `"usernamelengkap"`     | `4` → ❌ `"usr"`<br>`16` → ❌ `"usernamelengkapx"`     |
+| **Username**  | 1–15 karakter          | `8` → ✅ `"user1234"`<br>`15` → ✅ `"usernamelengkap"`     | kosong     |
 | **Email** | Format Email | kelompokjurnal@gmail.com | kelompok@.com |
 | **Password**  | Minimal 8 karakter     | `8` → ✅ `"pass1234"`                                    | `5` → ❌ `"12345"`                  |
 | **Confirm Password** | Sesuai dengan password yang diinput sebelumnya | sesuai dengan password yang diinput | Tidak sesuai dengan yang diinput |
@@ -34,6 +34,8 @@
 |TC01 | Input nama > 3 karakter | `sa`,`sandirsndi`,`san@gmail.com`,`sandi123`,`sandi123`| Error:nama minimal 3| Berhasil| ❌Failed|
 |TC02 | Input nama tepat minimal (1) | `s`,`sandirsndi`,`san@gmail.com`,`sandi123`,`sandi123` | Berhasil | Berhasil | ✅Passed|
 |TC03 | Input Username > 5 Karakter | `s`,`sans`,`san@gmail.com`,`sandi123`,`sandi123` | Error: Username minimal 5 karakter | Berhasil | ❌Failed|
+|TC 04 | Input username tepat minimal | 
+
 
 # TEST CASE REGISTER
 ---
