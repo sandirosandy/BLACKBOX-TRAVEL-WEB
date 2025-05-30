@@ -25,7 +25,7 @@
 |TC02 | Input nama tepat minimal (1) | `s`,`sandirsndi`,`san@gmail.com`,`sandi123`,`sandi123` | Valid | Valid | ✅Passed|
 |TC03 | Input Username > 5 Karakter | `s`,`sans`,`san@gmail.com`,`sandi123`,`sandi123` | Error: Username minimal 5 karakter | Valid | ❌Failed|
 |TC04 | Input username tepat minimal (1) | `s`,`sans`,`san@gmail.com`,`sandi123`,`sandi123`| Valid | Valid | ✅Passed |
-|TC05 | Input Email tanpa @ | sandigmail.com | Error:format email missing an @ | Pesan error berhasil ditampilkan | ✅Passed |
+|TC05 | Input Email tanpa @ | zasgmail.com | Error:format email missing an @ | Pesan error berhasil ditampilkan | ✅Passed |
 |TC06 | Input password non kombinasi | `12345` | Error:password harus mengandung angka dan huruf | Valid |  ❌Failed |
 |TC07 | Input kombinasi password | `zas12345` | Valid | Valid | ✅Passed |
 |TC08 | Input Confirm password | Sama: `zas1234` | valid | valid | ✅Passed |
