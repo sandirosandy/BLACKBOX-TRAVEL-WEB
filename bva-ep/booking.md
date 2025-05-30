@@ -1,8 +1,9 @@
 # Parameter Penilaian 
 | Field     | Parameter Validasi                     | Jenis Pengujian | Alasan Valid/Invalid                              |
 | --------- | -------------------------------------- | --------------- | ------------------------------------------------- |
-| Join Trip | Login / Register                       | BVA & EP        | Valid: Login/Register     |
-                                                                          Invalid: 
+| Join Trip | Login / Register                       | BVA & EP        | Valid: Login / Register 
+Invalid : Belum Login / Register |
+                                                                          
 # BOUNDARY VALUE ANALYSIS - REGISTER
 ---
 | Field         | Validasi Panjang/Range | Nilai Valid                               | Nilai Invalid                    |
