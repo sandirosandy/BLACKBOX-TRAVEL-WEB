@@ -16,7 +16,7 @@
 | *Username*         | 3–15 karakter, huruf dan angka saja              | <3 atau >15 karakter, ada simbol/spasi ("us", "toolongusernameee", "user\_name") |
 | *Email*            | Format lengkap: a@b.com                        | Tanpa '@', tanpa domain, kosong ("abc", "a@", "@b.com", "")                      |
 | *Password*         | ≥8 karakter, kombinasi huruf/angka/simbol        | <8 karakter, hanya huruf/angka, kosong ("pass12", "1234567", "")                 |
-| *Confirm Password* | Sama dengan password                             | Tidak sama dengan password, kosong                                               |
+| *Confirm Password* | Sesuai dengan password                             | Tidak sesuai dengan password, kosong                                               |
 ---
 # Test Case
 |TC ID | Deskripsi | Input | Excpect | Aktual | Status |
@@ -28,6 +28,7 @@
 |TC05 | Input Email tanpa @ | sandigmail.com | Error:format email missing an @ | Pesan error berhasil ditampilkan | ✅Passed |
 |TC06 | Input password non kombinasi | `12345` | Error:password harus mengandung angka dan huruf | Valid |  ❌Failed |
 |TC07 | Input kombinasi password | `zas12345` | Valid | Valid | ✅Passed |
+|TC08 | Input Confirm password | Sama: "pass1234" | valid | valid | ✅Passed |
 
 
 
