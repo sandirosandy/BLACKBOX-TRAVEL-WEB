@@ -1,11 +1,11 @@
 # Parameter Penilaian 
 | Field     | Parameter Validasi                     | Jenis Pengujian | Alasan Valid/Invalid                              |
 | --------- | -------------------------------------- | --------------- | ------------------------------------------------- |
-| Full Name | Minimal 3 huruf                        | BVA & EP        | Valid: panjang = 3, huruf semua; Invalid: <3      |
+| Name | Minimal 3 huruf                        | BVA & EP        | Valid: panjang = 3, huruf semua; Invalid: <3      |
 | Username  | 3–15 karakter, huruf/angka             | BVA & EP        | Valid:3/15 karakter; Invalid: 4/16 karakter      |
 | Email     | Format email                           | EP              | Valid: format lengkap; Invalid: tanpa '@', domain |
 | Password  | Minimal 8 karakter, kombinasi karakter | BVA & EP        | Valid: ≥6, kombinasi huruf/angka/simbol           |
-| Confirm Password | Sesuai dengan Password yang di inputkan sebelumnya                    | BVA & EP        | Valid: Jika sesuai dengan Password yang di inputkan sebelumnya  |
+| Confirm Password | Sesuai dengan Password yang di input sebelumnya                    | BVA & EP        | Valid: Jika sesuai dengan Password yang di inputkan sebelumnya  |
 
 # BOUNDARY VALUE ANALYSIS - REGISTER
 ---
@@ -22,12 +22,11 @@
 ---
 | Field         | Kelas Valid                               | Kelas Invalid                                                               |
 | ------------- | ----------------------------------------- | --------------------------------------------------------------------------- |
-| **Full Name** | Huruf & spasi, ≥ 3 huruf                  | Kosong, <3 huruf             |
-| **Username**  | 5–15 karakter, huruf/angka                | <5 atau >15 karakter                        |
-| **Password**  | ≥6 karakter, kombinasi huruf/angka/simbol | <6 karakteR        |
+| **Name** | Huruf & spasi, ≥ 3 huruf                  | Kosong, <3 huruf             |
+| **Username**  | 8–15 karakter, huruf/angka                | <8 atau >15 karakter                        |
 | **Email**     | Format email valid (`a@b.com`)            | Tanpa `@`, tanpa domain, kosong (`"abc"`, `"a@"`, `"@b.com"`, `""`)         |
-| **Phone**     | 11–13 digit angka                         | <10 atau >13 digit, mengandung huruf/simbol (`"08abc56789"`, `"0812-3456"`) |
-| **Address**   | ≥5 karakter, huruf/angka/simbol umum      | Kosong atau <5 karakter (`"RT2"`, `""`)                                     |
+| **Password**  | ≥8 karakter, kombinasi huruf/angka/simbol | <8 karakter        |
+| **Confirm Password** | Sesuai dengan password yang diinput sebelumnya | Tidak sesuai dengan yang diinput |
 
 # TEST CASE REGISTER
 ---
