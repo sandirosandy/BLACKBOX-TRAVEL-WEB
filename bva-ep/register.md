@@ -4,7 +4,7 @@
 | Full Name | Minimal 3 huruf                        | BVA & EP        | Valid: panjang = 3, huruf semua; Invalid: <3      |
 | Username  | 3–15 karakter, huruf/angka             | BVA & EP        | Valid:3/15 karakter; Invalid: 4/16 karakter      |
 | Email     | Format email                           | EP              | Valid: format lengkap; Invalid: tanpa '@', domain |
-| Password  | Minimal 6 karakter, kombinasi karakter | BVA & EP        | Valid: ≥6, kombinasi huruf/angka/simbol           |
+| Password  | Minimal 8 karakter, kombinasi karakter | BVA & EP        | Valid: ≥6, kombinasi huruf/angka/simbol           |
 | Confirm Password | Sesuai dengan Password yang di inputkan sebelumnya                    | BVA & EP        | Valid: Jika sesuai dengan Password yang di inputkan sebelumnya  |
 
 # BOUNDARY VALUE ANALYSIS - REGISTER
@@ -12,9 +12,9 @@
 | Field         | Validasi Panjang/Range | Nilai Input                               | Expected Result                  | Aktual | Status |
 | ------------- | ---------------------- | ----------------------------------------------------- | ---------------------------------------------------- |----|---|
 | **Name** | Minimal 3 huruf        | sa (2)                                | Invalid                                |Valid | failed|
-| **Username**  | 5–15 karakter          | `5` → ✅ `"user1"`<br>`15` → ✅ `"usernamelengkap"`     | `4` → ❌ `"usr"`<br>`16` → ❌ `"usernamelengkapx"`     |
+| **Username**  | 8–15 karakter          | `5` → ✅ `"user1"`<br>`15` → ✅ `"usernamelengkap"`     | `4` → ❌ `"usr"`<br>`16` → ❌ `"usernamelengkapx"`     |
 | **Email** | 
-| **Password**  | Minimal 6 karakter     | `6` → ✅ `"pass12"`                                    | `5` → ❌ `"12345"`                  |
+| **Password**  | Minimal 8 karakter     | `6` → ✅ `"pass12"`                                    | `5` → ❌ `"12345"`                  |
 | **Confirn Password** |
 ---
 
