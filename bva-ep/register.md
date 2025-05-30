@@ -9,7 +9,7 @@
 
 # BOUNDARY VALUE ANALYSIS - REGISTER
 ---
-| Field         | Validasi Panjang/Range | Nilai Valid                               | Expected Result                    |
+| Field         | Validasi Panjang/Range | Nilai Valid                               | Nilai Invalid                    |
 | ------------- | ---------------------- | ----------------------------------------------------- | ---------------------------------------------------- |
 | **Name** | Minimal 3 huruf        | sa (2)                                | Invalid                                |Valid | failed|
 | **Username**  | 8–15 karakter          | `5` → ✅ `"user1"`<br>`15` → ✅ `"usernamelengkap"`     | `4` → ❌ `"usr"`<br>`16` → ❌ `"usernamelengkapx"`     |
