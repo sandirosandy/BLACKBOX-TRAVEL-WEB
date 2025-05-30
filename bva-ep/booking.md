@@ -2,17 +2,16 @@
 | Field     | Parameter Validasi                     | Jenis Pengujian | Alasan Valid/Invalid                              |
 | --------- | -------------------------------------- | --------------- | ------------------------------------------------- |
 | Join Trip | Login / Register                       | BVA & EP        | Valid: Login / Register, Invalid : Belum Login / Register |
-| Add User | User yang sudah registrasi                       | BVA & EP        | Valid: Sudah Register, Invalid : Belum Register |
+| Add User | User yang sudah registrasi, Passport Aktif                       | BVA & EP        | Valid: Sudah Register,Passport Aktif, Invalid : Belum Register, Passport Tidak Aktif |
+| Join Trip Succes | Selesai Payment                       | BVA & EP        | Valid: Selesai Payment, Invalid : Belum Selesai Payment |
                                                                           
-# BOUNDARY VALUE ANALYSIS - REGISTER
+# BOUNDARY VALUE ANALYSIS - Booking
 ---
 | Field         | Validasi Panjang/Range | Nilai Valid                               | Nilai Invalid                    |
 | ------------- | ---------------------- | ----------------------------------------------------- | ---------------------------------------------------- |
-| **Name** | Minimal 3 huruf        | sa (2)                                | Invalid                                |Valid | failed|
-| **Username**  | 8–15 karakter          | `8` → ✅ `"user1234"`<br>`15` → ✅ `"usernamelengkap"`     | `4` → ❌ `"usr"`<br>`16` → ❌ `"usernamelengkapx"`     |
-| **Email** | Format Email | kelompokjurnal@gmail.com | kelompok@.com |
-| **Password**  | Minimal 8 karakter     | `8` → ✅ `"pass1234"`                                    | `5` → ❌ `"12345"`                  |
-| **Confirm Password** | Sesuai dengan password yang diinput sebelumnya | sesuai dengan password yang diinput | Tidak sesuai dengan yang diinput |
+| **Join Trip** | Login        | Sudah Login                                | Belum Login
+| **Add User**  | Login, Passport Aktif |   Login, Passport Aktif   | Belum Register, Passport Tidak Aktif     |
+| **Join Trip Succes** | Selesai Payment  | Selesai Payment  | Belum Selesai Payment |
 ---
 
 # EQUIVALENCE PARTITIONING - REGISTER
