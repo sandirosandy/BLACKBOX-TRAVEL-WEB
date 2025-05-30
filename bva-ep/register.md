@@ -9,11 +9,11 @@
 
 # BOUNDARY VALUE ANALYSIS - REGISTER
 ---
-| Field         | Validasi Panjang/Range | Nilai Input                               | Expected Result                  | Aktual | Status |
+| Field         | Validasi Panjang/Range | Nilai Valid                               | Expected Result               |
 | ------------- | ---------------------- | ----------------------------------------------------- | ---------------------------------------------------- |----|---|
 | **Name** | Minimal 3 huruf        | sa (2)                                | Invalid                                |Valid | failed|
 | **Username**  | 8–15 karakter          | `5` → ✅ `"user1"`<br>`15` → ✅ `"usernamelengkap"`     | `4` → ❌ `"usr"`<br>`16` → ❌ `"usernamelengkapx"`     |
-| **Email** | 
+| **Email** | Format Email | 
 | **Password**  | Minimal 8 karakter     | `6` → ✅ `"pass12"`                                    | `5` → ❌ `"12345"`                  |
 | **Confirn Password** |
 ---
