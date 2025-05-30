@@ -1,13 +1,12 @@
 # BOUNDARY VALUE ANALYSIS - REGISTER
 ---
-| Field         | Validasi Panjang/Range | Nilai Valid                               | Nilai Invalid                    |
-| ------------- | ---------------------- | ----------------------------------------------------- | ---------------------------------------------------- |
-| **Name** | Minimal 1 karakter        | sa (2)                                | "" (kosong)                               |Valid | failed|
-| **Username**  | 1–15 karakter          | `8` → ✅ `"user1234"`<br>`15` → ✅ `"usernamelengkap"`     | "" (kosong)   |
-| **Email** | Format Email | kelompokjurnal@gmail.com | kelompok@.com |
-| **Password**  | Minimal 8 karakter     | `8` → ✅ `"pass1234"`                                    | `5` → ❌ "12345", (kosong)                 |
-| **Confirm Password** | Sesuai dengan password yang diinput sebelumnya | sesuai dengan password yang diinput | Tidak sesuai dengan yang diinput |
----
+| Field                | Validasi Panjang/Range     | Nilai Valid                                   | Nilai Invalid                           |
+| -------------------- | -------------------------- | --------------------------------------------- | --------------------------------------- |
+| *Name*             | Minimal 3 karakter         | "asi" (3) ✅                                   | "As" (2), "" ❌                          |
+| *Username*         | 3–15 karakter              | "abc" (3), "abcdefghijklmno" (15) ✅           | "ab" (2), "abcdefghijklmnop" (16), "" ❌ |
+| *Email*            | Format email valid         | "[mail@domain.com](mailto:mail@domain.com)" ✅ | "mail@", "@domain", "mail.com" ❌        |
+| *Password*         | Minimal 8 karakter         | "pass1234" (8) ✅                              | "1234567" (7), "" ❌                     |
+| *Confirm Password* | Harus sama dengan password | Sama: "pass1234" ✅                            | Berbeda: "pass123", "" ❌                |---
 
 # EQUIVALENCE PARTITIONING - REGISTER
 ---
