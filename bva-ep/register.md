@@ -10,14 +10,13 @@
 
 # EQUIVALENCE PARTITIONING - REGISTER
 ---
-| Field         | Kelas Valid                               | Kelas Invalid                                                               |
-| ------------- | ----------------------------------------- | --------------------------------------------------------------------------- |
-| **Name** | Huruf & spasi, ≥ 1 karakter                 | "" (kosong)           |
-| **Username**  | 1 karakter               | 1 karakter                        |
-| **Email**     | Format email valid (`a@b.com`)            | Tanpa `@`, tanpa domain, kosong (`"abc"`, `"a@"`, `"@b.com"`, `""`)         |
-| **Password**  | ≥8 karakter | <8 karakter, kosong       |
-| **Confirm Password** | Sesuai dengan password yang diinput sebelumnya | Tidak sesuai dengan password yang diinput sebelumnya |
-
+| Field                | Kelas Valid                                      | Kelas Invalid                                                                    |
+| -------------------- | ------------------------------------------------ | -------------------------------------------------------------------------------- |
+| *Name*             | ≥3 huruf, hanya huruf/spasi ("John", "Ali Raza") | <3 karakter, kosong, ada angka/simbol ("Jo", "", "Jo3n", "An@")                  |
+| *Username*         | 3–15 karakter, huruf dan angka saja              | <3 atau >15 karakter, ada simbol/spasi ("us", "toolongusernameee", "user\_name") |
+| *Email*            | Format lengkap: a@b.com                        | Tanpa '@', tanpa domain, kosong ("abc", "a@", "@b.com", "")                      |
+| *Password*         | ≥8 karakter, kombinasi huruf/angka/simbol        | <8 karakter, hanya huruf/angka, kosong ("pass12", "1234567", "")                 |
+| *Confirm Password* | Sama dengan password                             | Tidak sama dengan password, kosong                                               |---
 # contoh
 |TC ID | Deskripsi | Input | Excpect | Aktual | Status |
 |---|---|---|---|---|---|
