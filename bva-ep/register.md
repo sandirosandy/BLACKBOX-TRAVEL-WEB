@@ -11,8 +11,8 @@
 ---
 | Field         | Validasi Panjang/Range | Nilai Valid                               | Nilai Invalid                    |
 | ------------- | ---------------------- | ----------------------------------------------------- | ---------------------------------------------------- |
-| **Name** | Minimal 3 huruf        | sa (2)                                | Invalid                                |Valid | failed|
-| **Username**  | 1–15 karakter          | `8` → ✅ `"user1234"`<br>`15` → ✅ `"usernamelengkap"`     | kosong     |
+| **Name** | Minimal 3 huruf        | sa (2)                                | ""                                |Valid | failed|
+| **Username**  | 1–15 karakter          | `8` → ✅ `"user1234"`<br>`15` → ✅ `"usernamelengkap"`     | ""    |
 | **Email** | Format Email | kelompokjurnal@gmail.com | kelompok@.com |
 | **Password**  | Minimal 8 karakter     | `8` → ✅ `"pass1234"`                                    | `5` → ❌ `"12345"`                  |
 | **Confirm Password** | Sesuai dengan password yang diinput sebelumnya | sesuai dengan password yang diinput | Tidak sesuai dengan yang diinput |
@@ -22,7 +22,7 @@
 ---
 | Field         | Kelas Valid                               | Kelas Invalid                                                               |
 | ------------- | ----------------------------------------- | --------------------------------------------------------------------------- |
-| **Name** | Huruf & spasi, ≥ 1 karakter                 | Kosong             |
+| **Name** | Huruf & spasi, ≥ 1 karakter                 | ""            |
 | **Username**  | 1 karakter               | 1 karakter                        |
 | **Email**     | Format email valid (`a@b.com`)            | Tanpa `@`, tanpa domain, kosong (`"abc"`, `"a@"`, `"@b.com"`, `""`)         |
 | **Password**  | ≥8 karakter | <8 karakter, kosong       |
